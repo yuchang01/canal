@@ -68,13 +68,13 @@
                             <goal>run</goal>
                         </goals>
                         <configuration>
-                            <tasks>
+                            <target name="copy">
                                 <copy todir="${project.basedir}/../launcher/target/classes/clickhouse" overwrite="true">
                                     <fileset dir="${project.basedir}/target/classes/clickhouse" erroronmissingdir="true">
                                         <include name="*.yml" />
                                     </fileset>
                                 </copy>
-                            </tasks>
+                            </target>
                         </configuration>
                     </execution>
                 </executions>
